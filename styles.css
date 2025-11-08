@@ -1,0 +1,126 @@
+/* Basic reset and page background */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; 
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
+  background: linear-gradient(180deg, #01132e 0%, #4684f7 100%); 
+  color: #e6eef6; }
+
+/* Center container */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+/* Card that imitates the glass panel */
+.card {
+  width: 380px;
+  max-width: calc(100% - 48px);
+  background: linear-gradient(180deg, rgba(199, 4, 4, 0.06)06), rgba(12, 12, 12, 0.02);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(232, 232, 245, 0.65), inset 0 1px 0 rgba(151, 3, 3, 0.02);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(10, 10, 10, 0.04);
+}
+
+/* Header area */
+.card-header {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+.brand-dot {
+  width:14px; height:14px; border-radius:50%;
+  background: radial-gradient(circle at 30% 30%, #ffd36a, #ff7a7a);
+  box-shadow: 0 4px 14px rgba(255,122,122,0.18);
+}
+.title {
+  font-size:14px;
+  font-weight:600;
+  color:#eaf3ff;
+  opacity:0.95;
+}
+
+
+/* Display area */
+.display {
+  margin-top:6px;
+  margin-bottom:18px;
+  background: linear-gradient(180deg, rgba(14, 13, 13, 0.015), rgba(7, 7, 7, 0.01));
+  padding:18px 16px;
+  border-radius:14px;
+  min-height:72px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-end;
+  gap:6px;
+  border: 1px solid rgba(255,255,255,0.025);
+}
+.expression {
+  font-size:16px;
+  color:#cfe8ff;
+  opacity:0.85;
+  word-break:break-all;
+}
+.result {
+  font-size:28px;
+  font-weight:700;
+  color:#fff;
+  letter-spacing:0.6px;
+}
+
+/* Button grid */
+.pad {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:12px;
+  margin-top:6px;
+}
+
+/* Buttons */
+.btn {
+  height:56px;
+  border-radius:12px;
+  border: none;
+  cursor: pointer;
+  font-size:18px;
+  font-weight:600;
+  transition: transform .08s ease, box-shadow .12s ease;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  user-select:none;
+}
+.btn:active { transform: translateY(1px); }
+
+.btn-operator {
+  background: linear-gradient(180deg, #14568a, #0b3e62);
+  color: #e6f6ff;
+  box-shadow: 0 6px 18px rgba(10,40,70,0.35);
+}
+.btn-number {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  color:#dff0ff;
+  box-shadow: 0 6px 14px rgba(1,6,12,0.45);
+}
+.btn-accent {
+  background: linear-gradient(180deg, #ffd36a, #ff9a6a);
+  color:#071021;
+  box-shadow: 0 8px 18px rgba(255,150,80,0.22);
+}
+.btn-wide {
+  grid-column: span 2;
+}
+
+/* Responsive tweaks */
+@media (max-width:420px) {
+  .card { width: 340px; padding:16px; border-radius:18px; }
+  .btn { height:50px; font-size:16px; }
+  .result { font-size:24px; }
+}
+

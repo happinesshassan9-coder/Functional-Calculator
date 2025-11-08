@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rounded Glass Calculator</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <main class="card" role="application" aria-label="Calculator">
+      <div class="card-header">
+        <div class="brand-dot" aria-hidden="true"></div>
+        <div>
+          <h1 class="title">Calculator</h1>
+        </div>
+      </div>
+
+      <div class="display" id="display" aria-live="polite">
+        <div id="expr" class="expression">0</div>
+        <div id="res" class="result">0</div>
+      </div>
+
+      <div class="pad" id="pad">
+        <button class="btn btn-operator" data-action="clear">AC</button>
+        <button class="btn btn-operator" data-action="neg">+/-</button>
+        <button class="btn btn-operator" data-action="percent">%</button>
+        <button class="btn btn-operator" data-value="/" title="Divide">÷</button>
+
+        <button class="btn btn-number" data-value="7">7</button>
+        <button class="btn btn-number" data-value="8">8</button>
+        <button class="btn btn-number" data-value="9">9</button>
+        <button class="btn btn-operator" data-value="*" title="Multiply">×</button>
+
+        <button class="btn btn-number" data-value="4">4</button>
+        <button class="btn btn-number" data-value="5">5</button>
+        <button class="btn btn-number" data-value="6">6</button>
+        <button class="btn btn-operator" data-value="-" title="Subtract">−</button>
+
+        <button class="btn btn-number" data-value="1">1</button>
+        <button class="btn btn-number" data-value="2">2</button>
+        <button class="btn btn-number" data-value="3">3</button>
+        <button class="btn btn-operator" data-value="+" title="Add">+</button>
+
+        <button class="btn btn-number btn-wide" data-value="0">0</button>
+        <button class="btn btn-number" data-value=".">.</button>
+        <button class="btn btn-accent" data-action="equals">=</button>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
