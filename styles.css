@@ -41,7 +41,7 @@ html, body { height: 100%;
 .title {
   font-size:14px;
   font-weight:600;
-  color:#eaf3ff;
+  color:#010101;
   opacity:0.95;
 }
 
@@ -63,14 +63,14 @@ html, body { height: 100%;
 }
 .expression {
   font-size:16px;
-  color:#cfe8ff;
+  color:#171a1d;
   opacity:0.85;
   word-break:break-all;
 }
 .result {
   font-size:28px;
   font-weight:700;
-  color:#fff;
+  color:#030202;
   letter-spacing:0.6px;
 }
 
