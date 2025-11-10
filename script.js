@@ -117,6 +117,7 @@ async function evaluateExpression(expr) {
     expression = String(result);
     render();
   } catch (apiError) {
+    
     try {
       const local = safeEvaluate(safeExpr);
       result = fmt(local);
